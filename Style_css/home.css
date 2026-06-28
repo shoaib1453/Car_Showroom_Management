@@ -1,0 +1,56 @@
+   /* General Styles */
+   body {
+    background-color: #f8f9fa;
+  }
+
+  /* Content reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px); /* Start below the normal position */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move back to the normal position */
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    height: 90vh;
+  }
+
+  .carousel-item img {
+    max-height: 90vh;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  /* Features Section Styles */
+  .feature-card {
+    border: none;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 16px 8px rgba(0, 0, 0, 0.300);
+    transition: transform 0.3s;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  

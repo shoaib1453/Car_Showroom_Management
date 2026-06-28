@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #212529;
+    color: white;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+header nav a:hover {
+    text-decoration: none;
+}  
+header nav a.active {
+    font-weight: bold; /* Make it stand out */
+    text-decoration: none; /* Or any style to indicate it's active */
+    color: #ff6600; /* Different color for active link */
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+}

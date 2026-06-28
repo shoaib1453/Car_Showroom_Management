@@ -1,0 +1,25 @@
+body {
+    background-image: url(../Images/abcd.jpg);
+    background-size: cover;
+}
+.signup-container {
+    max-width: 500px;
+    height: 450px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+    /* Initially hidden */
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+/* Reveal effect */
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}

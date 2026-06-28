@@ -1,0 +1,64 @@
+ /* Styling for the container and form */
+ .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;      
+    border-radius: 50px;
+    box-shadow: 0 4px 50px rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.425);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  label {
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: border-color 0.3s;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #000000;
+    outline: none;
+  }
+  button {
+    grid-column: 1 / -1;
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  button:hover {
+    background-color: green;
+    transform: translateY(-2px);
+  }
+  button:active {
+    transform: translateY(1px);
+  }
+  .visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
