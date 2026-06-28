@@ -1,0 +1,21 @@
+# XAMPP
+xampp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Composer
+/vendor/
+
+# Node
+node_modules/
